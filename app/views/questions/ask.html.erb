@@ -1,0 +1,8 @@
+<!-- app/views/pages/contact.html.erb -->
+<div class='mb-3 container d-flex justify-content-between flex-column align-items-center'>
+  <h1 class='fs-1'>Stupid Coaching</h1>
+<form action="/answer" method="get">
+  <input type="text" name="question" placeholder='Type your question here...' class='form-label w-100 fs-3' value='<%= params[:question] %>'>
+  <input type="submit" value="Ask!" class='form-action btn btn-primary fs-3'>
+</form>
+</div>
